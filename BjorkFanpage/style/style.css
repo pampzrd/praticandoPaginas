@@ -1,0 +1,159 @@
+@font-face 
+{
+
+    font-family: aquarius;
+    src: url("../font/Aquarius.otf");
+
+}
+
+body
+{
+    margin: auto;
+    width: 1000px;
+    background-color: palevioletred;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+body>.layout
+{
+    display: flex;
+}
+
+nav
+{
+    justify-self:left;
+}
+nav>ul
+{
+    height: 100%;
+    box-shadow: rgba(129, 0, 62, 0.559) 2px 3px 40px 3px;
+    list-style: none;
+    width: 150px;
+    color: rgb(247, 210, 251);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    background-color:rgb(224, 94, 144);
+    border: 1px solid rgba(129, 0, 62, 0.3);
+    padding: 20px;
+    border-radius: 5px;
+    text-align:center;
+    
+}   
+
+li
+{
+    margin: 10px;
+}
+
+a
+{
+    color: rgb(85, 50, 89);
+    text-decoration: none;
+}
+
+a:hover
+{
+    color:darkmagenta;
+}
+
+
+header
+{
+    margin: 20px;
+    display: flex;   
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+    box-shadow: rgba(129, 0, 62, 0.559) 2px 3px 40px 3px;
+    
+    padding: 20px;
+    background-color: rgb(247, 210, 251);
+}
+
+header>.banner>.imagem
+{
+
+    height: 350px;
+    width: auto;
+    border: 5px solid rgb(221, 112, 130); 
+    margin: 0;
+    
+}
+
+header>.banner>.imagem>img
+{
+    height: 100%;
+    margin: 0;
+
+}
+
+header>#titulo
+{
+   font-family:aquarius;
+    font-size: 20px;
+    color: rgb(85, 50, 89);
+    margin: auto;
+    padding: 0;
+    height: 100%;
+    width: auto;
+}
+
+main
+{
+  
+    margin-bottom: 20px;  
+   
+}
+
+main>.container
+{
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: rgba(129, 0, 62, 0.559) 2px 3px 40px 3px;
+    background-color: rgb(247, 210, 251);
+    padding: 30px;
+    width: 600px;
+    text-align: center; /*literalmente o texto*/
+    margin: auto;
+    
+    
+}
+main>.nome
+{
+    width: 100%;
+    margin:50px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: rgb(247, 210, 251);
+}
+
+main>.container>.nome>h2
+{
+    margin: 0;
+    margin-left: 20px;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: darkmagenta;
+}
+
+main>.container>.musica
+{
+    width: auto;
+    
+}
+
+footer
+{
+    background-color:rgb(224, 94, 144);
+    border: 1px solid rgba(129, 0, 62, 0.3);
+    box-shadow: rgba(129, 0, 62, 0.559) 2px 3px 40px 3px;
+    padding: 10px;
+    width: 900px;
+    margin-left: 20px;
+    color:rgb(85, 50, 89);
+    text-align: end;
+    margin-right:50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 5px;
+}
