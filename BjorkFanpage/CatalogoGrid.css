@@ -1,0 +1,176 @@
+*
+{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body
+{
+    background-color: palevioletred;
+    width: 100%;
+    height: 100vh;
+    font-family: Bahnschrift;
+    text-align: center;
+    color: #6c7f93;
+}
+
+header
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo
+{
+    width: 40px;
+    height: 40px;
+    background-color: darkmagenta;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+ul
+{
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+    font-size: 20px;
+    font-family: Bahnschrift;
+    flex-wrap: wrap;
+    color: rgb(85, 50, 89);
+
+
+}
+
+ul > li
+{
+    margin-left: 20px;
+}
+
+ul > li > a
+{
+    color: darkmagenta;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+ul > li > a:hover
+{
+    color: #273a39;
+    background-color: #b8d2d2;
+    text-decoration: none;
+
+}
+
+h1
+{
+    color: rgb(85, 50, 89);
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.container
+{
+    padding-top: 30px;
+    max-width: 1200px;
+    margin:0 auto;
+    display: grid;
+    grid-template-areas:
+            "sidenav item item"
+            "sidenav item item"
+            "sidenav item item"
+            "footer footer footer";
+    grid-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+img
+{
+    width: 100%;
+    /*Edita a imagem primeiro para não vazar a imagem da tela*/
+    border-radius: 20px;
+}
+
+.sidenav
+{
+
+    max-width: 300px;
+    min-width: 250px;
+    height: 900px;
+    border-radius: 20px;
+    background-color:rgb(224, 94, 144);
+    border: 1px solid rgba(129, 0, 62, 0.3);
+    padding: 20px;
+    border-radius: 5px;
+    grid-area:"sidenav";
+    grid-row:sidenav; /*Mescla as linhas para ficar 1 só*/
+}
+
+.item
+{
+
+    grid-area: "item";
+    max-width: 300px;
+    min-width: 250px;
+    height: 300px;
+    border-radius: 20px;
+    background-color:rgb(224, 94, 144);
+    display:  block;
+    justify-self: center;
+
+}
+
+footer
+{
+    "footer"
+    width: auto;
+    height: 300px;
+    border-radius: 20px;
+    background-color:rgb(224, 94, 144);
+    border: 1px solid rgba(129, 0, 62, 0.3);
+    padding: 20px;
+    grid-column: footer; /*Mescla as colunas para ficar 1 só*/
+
+}
+
+/*media query para tornar mais responsivo 729x357* vai mudar para 2 colunas*/
+@media (max-width:792px){
+    .container
+    {
+        grid-template-areas:
+            "sidenav item "
+            "sidenav item "
+            "sidenav item "
+            "sidenav item "
+            "sidenav item "
+            "sidenav item "
+            "footer footer";
+    }
+}
+
+@media (max-width:520px){
+    .sidenav
+    {
+        height: 200px;
+    }
+    .container
+    {
+        grid-template-areas:
+            "sidenav "
+            "item "
+            "item "
+            "item "
+            "item "
+            "item "
+            "item "
+            "footer";
+    }
+}
